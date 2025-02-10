@@ -1,50 +1,14 @@
-/*fontes*/
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap');
-
-/*--- Variaveis---*/
-:root {
-    ---fonte-principal: "Boogaloo", serif;
-    ---fonte-segundaria: "Brawler", serif;
-
-    ---cor-de-fundo:#F6EEC9;
-    ---vermelho: #FF0000;
-    ---vermelho-medio: #EE4E4E;
-    ---vermelho-claro: #FFA27F;
-    ---verde-escuro:#799351;
-    ---verde-claro:#A1DD70;
-    
-}
-
-*{
-    margin: 0;
-    padding: 0;
-}
+@import url("style.css");
 
 body {
     background-image:url(imagens/img-de-fundo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
-    background-color: var(---cor-de-fundo);
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
 }
 
 .titulo {
-    font-family: var(---fonte-principal);
     font-size: 77px;
-    padding: 38px 0 20px 0;
-    background-image: linear-gradient(to right, var(---vermelho),var(---vermelho-claro), var(---verde-claro, var(---verde-escuro),var(---verde-escuro)));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: black;
 }
 
 .sub-titulo{
