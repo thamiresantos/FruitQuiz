@@ -1,0 +1,95 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&display=swap');
+
+/*--- Variaveis---*/
+:root {
+    ---fonte-principal: "Boogaloo", serif;
+    ---fonte-segundaria: "Brawler", serif;
+
+    ---cor-de-fundo:#F6EEC9;
+    ---vermelho: #FF0000;
+    ---vermelho-medio: #EE4E4E;
+    ---vermelho-claro: #FFA27F;
+    ---verde-escuro:#799351;
+    ---verde-claro:#A1DD70;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image:url(imagens/img-de-fundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    background-color: var(---cor-de-fundo);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titulo {
+    font-family: var(---fonte-principal);
+    font-size: 77px;
+    padding: 38px 0 20px 0;
+    background-image: linear-gradient(to right, var(---vermelho),var(---vermelho-claro), var(---verde-claro, var(---verde-escuro),var(---verde-escuro)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+}
+
+.sub-titulo{
+    font-family: var(---fonte-segundaria);
+   font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 35px;
+}
+
+.txtNomeUser {
+    font-family: var(---fonte-segundaria);
+    padding:10px;
+}
+
+#userNome{
+    height: 40px;
+    width: 310px;
+    border: 2.5px solid var(---vermelho-medio);
+    border-radius: 5px;
+    padding: 3px 15px;
+    margin-bottom: 40px;
+}
+
+#userNome:focus {
+    outline: 0;
+}
+
+.btnStart {
+    text-decoration: none;
+    height: 35px;
+    width: 180px;
+    border: 1.5px solid var(---verde-claro);
+    border-radius: 7px;
+    background-color: var(---verde-escuro);
+    font-family: var(---fonte-segundaria);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 2px 2px 4px var(---verde-claro);
+    margin: 12px;
+    padding-top: 10px;
+}
+
+.btnStart:hover {
+    background-color: var(---verde-claro);
+    box-shadow: none;
+    transition: .1s;
+}
