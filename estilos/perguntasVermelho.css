@@ -1,0 +1,50 @@
+@import url(style.css);
+
+.titulo {
+    font-size: 55px;
+}
+
+.pergunta {
+    font-family: var(---fonte-segundaria);
+}
+
+.lista-opcoes {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.opcoes {
+    list-style: none;
+    padding: 10px 10px 10px 25px;
+    margin: 15px;
+    border: 2px solid var(---vermelho-medio);
+    border-radius: 5px;
+    width: 460px;
+    background-color: var(---vermelho-medio);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.opcoes:hover {
+    border-color: var(---vermelho-claro);
+    color: white;
+    text-align: center;
+    transition: .2s;
+}
+
+.btn-proximo{
+    text-decoration: none;
+    border: 2px solid var(---verde-escuro);
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(---verde-escuro);
+   
+}
+
+.btn-proximo:hover {
+    background-color: var(---verde-escuro);
+    color: white;
+    border: none;
+}
