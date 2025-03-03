@@ -8,16 +8,16 @@
 </head>
 <body>
     <h1 class="titulo">Fruit Quiz</h1>
-    <p class="pergunta"> 04. Que fruta é nativa da China e é conhecida por sua casca peluda?</p>
-    <ul class="lista-opcoes">
-        <li class="opcoes">Lichia</li>
-        <li class="opcoes">Pêssego</li>
-        <li class="opcoes">Damasco</li>
-        <li class="opcoes">Ameixa</li>
-        <li class="opcoes">Nectaria</li>
-    </ul>
-    <a href="#"id="verificar" class="btn-proximo">Confirmar</a>
-    <p id="mensagem"></p>
+    <p class="pergunta"> 04. Que fruta é nativa do Brasul e tem um formato que lembra uma estrela?</p>
+    <div id="div-opcoes" data-proxima-pagina="pergunta05.html">
+        <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Acerola</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Pitanga</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Jabuticaba</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Graviola</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Carambola</button>
+    </div>
 
-    <script src="javascript/script.js"></script>
+    <div id="mensagem"></div>
+    
+    <script src="javascript/respostas.js"></script>
 </body>

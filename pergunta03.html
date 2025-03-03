@@ -8,16 +8,16 @@
 </head>
 <body>
     <h1 class="titulo">Fruit Quiz</h1>
-    <p class="pergunta"> 03. Qua fruta tem o nome de um pássaro?</p>
-    <ul class="lista-opcoes">
-        <li class="opcoes">Kiwi</li>
-        <li class="opcoes">Abacate</li>
-        <li class="opcoes">Acerola</li>
-        <li class="opcoes">Graviola</li>
-        <li class="opcoes">Pitaya</li>
-    </ul>
-    <a href="#"id="verificar" class="btn-proximo">Confirmar</a>
-    <p id="mensagem"></p>
+    <p class="pergunta"> 03. Qual fruta tem o nome de um pássaro?</p>
+    <div id="div-opcoes" data-proxima-pagina="pergunta04.html">
+        <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Kiwi</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Abacaxi</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Acerola</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Graviola</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Pitaya</button>
+    </div>
 
-    <script src="javascript/script.js"></script>
+    <div id="mensagem"></div>
+    
+    <script src="javascript/respostas.js"></script>
 </body>

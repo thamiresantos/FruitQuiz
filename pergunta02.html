@@ -8,16 +8,16 @@
 </head>
 <body>
     <h1 class="titulo">Fruit Quiz</h1>
-    <p class="pergunta"> 02. Que fruta é formosa por ser usada em tortas e bolos, e tem uma casca vermelha brilhante?</p>
-    <ul class="lista-opcoes">
-        <li class="opcoes">Pêssego</li>
-        <li class="opcoes">Cereja</li>
-        <li class="opcoes">Amora</li>
-        <li class="opcoes">Framboesa</li>
-        <li class="opcoes">Melancia</li>
-    </ul>
-    <a href="#"id="verificar" class="btn-proximo">Confirmar</a>
-    <p id="mensagem"></p>
+    <p class="pergunta"> 02. Qual fruta é conhecida por ser uma excelente fonte de vitamina C e tem uma casca cítrica e amarela?</p>
+    <div id="div-opcoes" data-proxima-pagina="pergunta03.html">
+        <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Pêssego</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Laranja</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Amora</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Banana</button>
+        <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Melancia</button>
+    </div>
 
-    <script src="javascript/script.js"></script>
+    <div id="mensagem"></div>
+    
+    <script src="javascript/respostas.js"></script>
 </body>
