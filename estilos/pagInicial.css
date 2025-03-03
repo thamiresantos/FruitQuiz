@@ -23,7 +23,7 @@ body {
     padding:10px;
 }
 
-#userNome{
+#nome{
     height: 40px;
     width: 310px;
     border: 2.5px solid var(---vermelho-medio);
@@ -32,13 +32,12 @@ body {
     margin-bottom: 40px;
 }
 
-#userNome:focus {
+#nome:focus {
     outline: 0;
 }
 
 .btnStart {
-    text-decoration: none;
-    height: 35px;
+    height: 40px;
     width: 180px;
     border: 1.5px solid var(---verde-claro);
     border-radius: 7px;
@@ -48,8 +47,8 @@ body {
     text-align: center;
     font-size: 14px;
     box-shadow: 2px 2px 4px var(---verde-claro);
-    margin: 12px;
-    padding-top: 10px;
+    margin: 8px;
+    
 }
 
 .btnStart:hover {

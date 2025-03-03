@@ -1,0 +1,64 @@
+@import url("style.css");
+@import url("pagInicial.css");
+
+
+
+h2 {
+    margin: 15px;
+    width: 500px;
+    text-align: center;
+    padding: 8px;
+    font-weight: 700;
+}
+
+#usuario{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, var(---vermelho), var(---verde-claro, var(---verde-escuro),var(---verde-escuro)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+
+.btn-jogarNovamente{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(---fonte-segundaria);
+    font-weight: 700;
+    text-align: center;
+    height: 25px;
+    width: 280px;
+    padding: 10px;
+    color: black;
+    background-color: var(---verde-claro);
+    border:2px solid var(---verde-escuro);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn-jogarNovamente:hover {
+    color: wheat;
+    background-color: var(---verde-escuro);
+    border-color: var(---verde-claro);
+}
+
+#link-TS{
+    text-decoration: none;
+    font-family: var(---fonte-principal);
+    font-size: 1em;
+    margin: 35px 0px 10px;
+    background-image: linear-gradient(to left, var(---vermelho), var(---verde-claro, var(---verde-escuro),var(---verde-escuro)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(---vermelho);
+}
+
+
+
+.icons{
+    margin: 8px;
+}
