@@ -6,7 +6,7 @@ function validarNome(){
     let mensagem = document.getElementById("mensagem")
     if (nome === "") {
         //mensagem.textContent = "Insira como gostaria de ser chamado para continuar"
-     alert ('Para continuar, insira como gostaria de ser chamada(o)!!')
+     alert ('Para continuar, insira como gostaria de ser chamado!!')
    
     } else {
         window.location.href = 'pergunta01.html'
