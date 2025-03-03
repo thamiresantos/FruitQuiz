@@ -9,6 +9,9 @@ function validarNome(){
      alert ('Para continuar, insira como gostaria de ser chamado!!')
    
     } else {
+        localStorage.setItem('nomeUsuario', nome); // Armazendo o nome do usuario
         window.location.href = 'pergunta01.html'
     }
 }
+
+
