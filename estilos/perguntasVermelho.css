@@ -6,6 +6,12 @@
 
 .pergunta {
     font-family: var(---fonte-segundaria);
+    padding: 5px;
+}
+
+#div-opcoes {
+    display: flex;
+    flex-direction: column;
 }
 
 .lista-opcoes {
@@ -17,7 +23,7 @@
 .opcoes {
     list-style: none;
     padding: 10px 10px 10px 25px;
-    margin: 15px;
+    margin: 10px;
     border: 2px solid var(---vermelho-medio);
     border-radius: 5px;
     width: 460px;
@@ -29,22 +35,28 @@
 
 .opcoes:hover {
     border-color: var(---vermelho-claro);
-    color: white;
-    text-align: center;
     transition: .2s;
 }
 
-.btn-proximo{
-    text-decoration: none;
-    border: 2px solid var(---verde-escuro);
-    padding: 10px 15px;
-    border-radius: 10px;
-    color: var(---verde-escuro);
-   
+button.correta {
+    background-color :blueviolet;
+    color: white;
 }
 
-.btn-proximo:hover {
-    background-color: var(---verde-escuro);
+button.incorreta {
+    background-color: orange;
     color: white;
-    border: none;
+}
+
+#mensagem {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#mensagem.erro{
+    color: red;
+}
+
+#mensagem.acerto {
+    color: green;
 }
