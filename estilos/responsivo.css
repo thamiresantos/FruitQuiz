@@ -1,0 +1,44 @@
+/*tela inicial e final*/
+
+body {
+    margin: 0 0px;
+    background-image: none;
+    overflow: hidden;
+
+}
+
+.tela-responsivo{
+    height: 200px;
+    width: 490px;
+    background-image: url(imagens/img-responsivo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 108%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 50px;
+}
+
+.titulo {
+    font-size: 70px;
+}
+
+.sub-titulo {
+    margin: 0 80px;
+}
+
+.txtNomeUser{
+    padding: 5px;
+}
+
+/*telas perguntas*/
+
+.pergunta{
+    width: 400px;
+    margin: 0 15px; 
+}
+
+.opcoes{
+    width: 410px;
+}
