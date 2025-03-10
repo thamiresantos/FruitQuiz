@@ -1,7 +1,7 @@
+@import url(style.css);
 /*tela inicial e final*/
 
 body {
-    margin: 0 0px;
     background-image: none;
     overflow: hidden;
 
@@ -17,6 +17,7 @@ body {
     margin: 0px;
     padding: 0px;
     position: absolute;
+
     top: 50px;
 }
 
@@ -25,20 +26,37 @@ body {
 }
 
 .sub-titulo {
-    margin: 0 80px;
+    margin: 0 20px;
 }
 
 .txtNomeUser{
-    padding: 5px;
+    padding: 1px;
+    font-size: 15px;
 }
 
+#nome {
+    width: 280px;
+}
+
+#link-TS , .midias-sociais {
+    width: 200px;
+    text-align: center;
+}
 /*telas perguntas*/
 
 .pergunta{
-    width: 400px;
+    width: 350px;
     margin: 0 15px; 
+    font-size: 15px;
 }
 
 .opcoes{
-    width: 410px;
+    width: 370px;
 }
+
+#mensagem.erro , #mensagem.acerto{
+    width: 350px;
+    text-align: center;
+}
+
+
