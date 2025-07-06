@@ -1,6 +1,6 @@
 ## Fruit Quiz 🍒
 
-> ⚙️ Fruit Quiz é um pequeno quiz interativo de 5 perguntas sobre as frutas. Para acessar, clique <a href="fruit-quiz-six.vercel.app" target= "_blank">aqui.</a> 
+> ⚙️ Fruit Quiz é um pequeno quiz interativo de 5 perguntas sobre as frutas. Para acessar, clique <a href="https://fruit-quiz-six.vercel.app/" target= "_blank">aqui.</a> 
 
 <p align="center">
   <img alt="Imagem do projeto" src="estilos/imagens/img.png" width="100%">
