@@ -1,64 +1,71 @@
 @import url(style.css);
 /*tela inicial e final*/
 
+/* MOBILE */
 body {
     background-image: none;
-    overflow: hidden;
-    width: 400px;
-
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
-.tela-responsivo{
+/* imagem exclusiva do mobile */
+.tela-responsivo {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+
     height: 200px;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
+
     background-image: url(imagens/img-responsivo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110%;
-    padding: 0px;
-    position: absolute;
-    top: 200px;
-   
-    
+    pointer-events: none;
 }
-
 .titulo {
-    font-size: 70px;
+    font-size: 60px;
+    text-align: center;
 }
 
 .sub-titulo {
-    width: 350px;
+    max-width: 350px;
+    text-align: center;
 }
 
-
-.txtNomeUser{
-    padding: 1px;
+.txtNomeUser {
+    padding: 4px;
     font-size: 15px;
 }
 
 #nome {
-    width: 280px;
+    width: 80%;
+    max-width: 280px;
 }
 
-#link-TS , .midias-sociais {
-    width: 200px;
+/* rodapé */
+#link-TS,
+.midias-sociais {
+    width: 100%;
     text-align: center;
 }
-/*telas perguntas*/
 
-.pergunta{
-    width: 350px;
-    margin: 0 15px; 
+/* telas de perguntas */
+.pergunta {
+    width: 80vw;
+    margin: 0 6px;
     font-size: 15px;
 }
 
-.opcoes{
-    width: 368px;
+.opcoes {
+    width: 74vw;
 }
 
-#mensagem.erro , #mensagem.acerto{
-    width: 350px;
+#mensagem.erro,
+#mensagem.acerto {
+    max-width: 350px;
     text-align: center;
 }
-
-

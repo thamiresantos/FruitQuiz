@@ -4,16 +4,24 @@
 
 /*--- Variaveis---*/
 :root {
-    ---fonte-principal: "Boogaloo", serif;
-    ---fonte-segundaria: "Brawler", serif;
+    --fonte-principal: "Boogaloo", serif;
+    --fonte-segundaria: "Brawler", serif;
 
-    ---cor-de-fundo:#F6EEC9;
-    ---vermelho: #FF0000;
-    ---vermelho-medio: #EE4E4E;
-    ---vermelho-claro: #FFA27F;
-    ---verde-escuro:#799351;
-    ---verde-claro:#A1DD70;
-    
+    ---cor-de-fundo:#fffaf0;
+    --vermelho: #FF0000;
+    --vermelho-medio: #EE4E4E;
+    --vermelho-claro: #FFA27F;
+    --verde-escuro:#799351;
+    --verde-claro:#A1DD70;
+    --bg-card: #ffffff;
+    --btn-fundo: #fde68a;           
+    --btn-border: #f59e0b;
+    --btn-text: #78350f;
+    --btn-bg-hover: #fcd34d;
+    --btn-border-hover: #d97706;
+    --sucesso: #22c55e;
+    --erro: #ef4444;
+    --texto-principal: #1f2937;
 }
 
 *{
@@ -32,11 +40,18 @@ body {
 }
 
 .titulo {
-    font-family: var(---fonte-principal);
+    font-family: var(--fonte-principal);
     padding: 38px 0 20px 0;
-    background-image: linear-gradient(to right, var(---vermelho),var(---vermelho-claro), var(---verde-claro, var(---verde-escuro),var(---verde-escuro)));
+
+    background-image: linear-gradient(
+        to right,
+        var(--vermelho),
+        var(--vermelho-claro),
+        var(--verde-claro),
+        var(--verde-escuro)
+    );
+
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: black;
 }

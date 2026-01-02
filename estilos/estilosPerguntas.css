@@ -1,0 +1,67 @@
+@import url(style.css);
+
+.titulo {
+  font-size: 55px;
+}
+
+.pergunta {
+  font-family: var(--fonte-segundaria);
+  padding: 5px;
+  width: 40vw;
+}
+
+#div-opcoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.lista-opcoes {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.opcoes {
+  border: 2px solid var(--btn-border);
+  color: var(--btn-text);
+
+  padding: 10px 10px 10px 25px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 460px;
+
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.opcoes:hover {
+  background-color: var(--btn-bg-hover);
+  border-color: var(--btn-border-hover);
+}
+
+button.correta {
+  background-color: var(--sucesso);
+  border-color: var(--sucesso);
+  color: white;
+}
+
+button.incorreta {
+  background-color: var(--erro);
+  border-color: var(--erro);
+  color: white;
+}
+
+#mensagem {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#mensagem.erro{
+  color: red;
+}
+
+#mensagem.acerto {
+  color: green;
+}

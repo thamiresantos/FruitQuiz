@@ -1,64 +1,82 @@
 @import url("style.css");
 @import url("pagInicial.css");
 
-
-
 h2 {
     margin: 15px;
-    width: 500px;
+    max-width: 500px;
     text-align: center;
     padding: 8px;
     font-weight: 700;
+    font-family: var(--fonte-secundaria);
 }
 
-#usuario{
+
+#usuario {
     display: inline;
-    margin: 0;
-    padding: 5px;
+    padding: 0 6px;
     text-transform: uppercase;
-    background-image: linear-gradient(to bottom, var(---vermelho), var(---verde-claro, var(---verde-escuro),var(---verde-escuro)));
+
+    background-image: linear-gradient(
+        to right,
+        var(--vermelho),
+        var(--vermelho-claro),
+        var(--verde-claro)
+    );
+
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
 }
 
-.btn-jogarNovamente{
+
+.btn-jogarNovamente {
     text-decoration: none;
     text-transform: uppercase;
-    font-family: var(---fonte-segundaria);
+    font-family: var(--fonte-secundaria);
     font-weight: 700;
     text-align: center;
+
     height: 25px;
     width: 280px;
     padding: 10px;
-    color: black;
-    background-color: var(---verde-claro);
-    border:2px solid var(---verde-escuro);
-    border-radius: 5px;
-    margin: 5px;
+
+    color: #7c2d12;
+    background-color: #fed7aa; /* pêssego */
+    border: 2px solid #fb923c;
+
+    border-radius: 8px;
+    margin: 8px;
+
+    transition: background-color .2s ease, transform .2s ease;
 }
+
 
 .btn-jogarNovamente:hover {
-    color: wheat;
-    background-color: var(---verde-escuro);
-    border-color: var(---verde-claro);
+    background-color: #fb923c;
+    color: white;
+    transform: translateY(-2px);
 }
 
-#link-TS{
+
+#link-TS {
     text-decoration: none;
-    font-family: var(---fonte-principal);
+    font-family: var(--fonte-principal);
     font-size: 1em;
     margin: 35px 0px 10px;
-    background-image: linear-gradient(to left, var(---vermelho), var(---verde-claro, var(---verde-escuro),var(---verde-escuro)));
+
+    background-image: linear-gradient(
+        to left,
+        var(--vermelho),
+        var(--vermelho-claro),
+        var(--verde-claro)
+    );
+
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: var(---vermelho);
 }
-
-
 
 .icons{
     margin: 8px;
+    transform: scale(1.1);
 }
