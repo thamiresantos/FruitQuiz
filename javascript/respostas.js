@@ -1,14 +1,35 @@
-function verificarResposta (botao, respostaCorreta) {
-    if (botao.textContent === respostaCorreta){
-        botao.classList.add('correta');
-        document.getElementById('mensagem').textContent = 'Resposta Correta!';
-        document.getElementById('mensagem').classList.add('acerto');
+function mostrarFruta(nomeFruta) {
+    const img = document.createElement("img");
+    img.src = `estilos/imagens/frutas/${nomeFruta}.png`;
+    img.classList.add("fruta-feedback");
 
-// Redireciona para a próxima página após um breve atraso
-setTimeout(function(){
-    proximaPagina();
-}, 1500); // Aguarda 1.5 segundos (1500 milissegundos)
-    } else {
+    document.body.appendChild(img);
+
+    // remove depois da animação
+    setTimeout(() => {
+        img.remove();
+    }, 900);
+}
+
+
+function verificarResposta (botao, respostaCorreta) {
+if (botao.textContent === respostaCorreta){
+    botao.classList.add('correta');
+
+    const mensagem = document.getElementById('mensagem');
+    mensagem.textContent = 'Resposta Correta!';
+    mensagem.classList.remove('erro');
+    mensagem.classList.add('acerto');
+
+    //feedback visual da fruta
+   const fruta = document.getElementById("div-opcoes").dataset.fruta;
+    mostrarFruta(fruta);
+    
+    setTimeout(function(){
+        proximaPagina();
+    }, 900);
+
+} else {
         botao.classList.add('incorreta');
         document.getElementById('mensagem').textContent = 'Resposta incorreta. Tente Novamente!';
         document.getElementById('mensagem').classList.add('erro');
