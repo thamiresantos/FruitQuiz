@@ -1,6 +1,14 @@
 @import url("style.css");
 @import url("pagInicial.css");
 
+body {
+    background-image: url(imagens/img-de-fundo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+
 h2 {
     margin: 15px;
     max-width: 500px;
@@ -79,4 +87,25 @@ h2 {
 .icons{
     margin: 8px;
     transform: scale(1.1);
+}
+
+/*MOBILE*/
+@media (max-width: 580px) {
+    body {
+        background:none;
+    }
+
+    .sub-titulo {
+        padding: 0;
+    }
+
+    .btn-jogarNovamente {
+        width: 70vw;
+    }
+
+    #link-TS, .midias-sociais {
+        width: 100%;
+        text-align: center;
+    }
+
 }

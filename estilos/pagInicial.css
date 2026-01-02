@@ -49,7 +49,7 @@ body {
     border: none;
 
     font-family: var(--fonte-secundaria);
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
 
     box-shadow: 0 6px 12px rgba(0,0,0,0.15);
@@ -64,4 +64,51 @@ body {
     background-color: var(--btn-bg-hover);
     transform: translateY(-2px);
     box-shadow: 0 10px 18px rgba(0,0,0,0.18);
+}
+
+/*MOBILE*/
+@media (max-width: 580px) {
+   body {
+    background-image: none;
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.tela-responsivo {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    height: 200px;
+    width: 100%;
+    max-width: 400px;
+
+    background-image: url(imagens/img-responsivo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 110%;
+    pointer-events: none;
+}
+.titulo {
+    font-size: 60px;
+    text-align: center;
+}
+
+.sub-titulo {
+    max-width: 350px;
+    text-align: center;
+    padding: px;
+}
+
+.txtNomeUser {
+    padding: 4px;
+    font-size: 15px;
+}
+
+#nome {
+    width: 80%;
+    max-width: 280px;
+}
 }

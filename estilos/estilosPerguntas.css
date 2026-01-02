@@ -65,3 +65,22 @@ button.incorreta {
 #mensagem.acerto {
   color: green;
 }
+
+/*MOBILE*/
+@media (max-width: 580px) {
+.pergunta {
+  width: 80vw;
+  margin: 0 6px;
+  font-size: 15px;
+}
+
+.opcoes {
+  width: 74vw;
+}
+
+#mensagem.erro,
+#mensagem.acerto {
+  max-width: 350px;
+  text-align: center;
+}
+}
