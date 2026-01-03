@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="estilos/estilosPerguntas.css">
 </head>
 <body>
-    <h1 class="titulo">Fruit Quiz</h1>
-    <p class="progresso">Pergunta 2 de 5</p>
-    <p class="pergunta"> 02. Qual fruta é conhecida por ser uma excelente fonte de vitamina C e tem uma casca cítrica e amarela?</p>
-    <div id="div-opcoes" data-proxima-pagina="pergunta03.html"    data-fruta="laranja">
-        <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Pêssego</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Laranja</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Amora</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Banana</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Melancia</button>
-    </div>
+    <main class="page-bg">
+        <section class="page-card card-perguntas">
+            <h1 class="titulo">Fruit Quiz</h1>
+
+            <p class="progresso">Pergunta 2 de 5</p>
+
+            <p class="pergunta"> 02. Qual fruta é conhecida por ser uma excelente fonte de vitamina C e tem uma casca cítrica e amarela?</p>
+
+            <div id="div-opcoes" 
+                data-proxima-pagina="pergunta03.html"    data-fruta="laranja">
+
+                <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Pêssego</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Laranja</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Amora</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Banana</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Laranja')">Melancia</button>
+            </div>
 
     <div id="mensagem"></div>
-    
+        </section>
+    </main>
+     <footer class="rodape">
+    <p>© 2025 - Desenvolvido por  <a href="https://github.com/thamiresantos" target="_blank"  rel="noopener noreferrer"> Thamires Santos</a></p>
+  </footer>
     <script src="javascript/respostas.js"></script>
 </body>
+</html>

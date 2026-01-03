@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="estilos/estilosPerguntas.css">
 </head>
 <body>
-    <h1 class="titulo">Fruit Quiz</h1>
-     <p class="progresso">Pergunta 3 de 5</p>
-    <p class="pergunta"> 03. Qual fruta tem o nome de um pássaro?</p>
-    <div id="div-opcoes" data-proxima-pagina="pergunta04.html"    data-fruta="kiwi">
-        <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Kiwi</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Abacaxi</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Acerola</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Graviola</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Pitaya</button>
-    </div>
+    <main class="page-bg">
+        <section class="page-card card-perguntas">
+            <h1 class="titulo">Fruit Quiz</h1>
+
+            <p class="progresso">Pergunta 3 de 5</p>
+
+            <p class="pergunta"> 03. Qual fruta tem o nome de um pássaro?</p>
+
+            <div id="div-opcoes" data-proxima-pagina="pergunta04.html"    data-fruta="kiwi">
+
+                <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Kiwi</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Abacaxi</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Acerola</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Graviola</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Kiwi')">Pitaya</button>
+            </div>
 
     <div id="mensagem"></div>
-    
+        </section>
+    </main>
+     <footer class="rodape">
+    <p>© 2025 - Desenvolvido por  <a href="https://github.com/thamiresantos" target="_blank"  rel="noopener noreferrer"> Thamires Santos</a></p>
+  </footer>
     <script src="javascript/respostas.js"></script>
 </body>
+</html>

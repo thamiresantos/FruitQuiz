@@ -7,18 +7,30 @@
     <link rel="stylesheet" href="estilos/estilosPerguntas.css">
 </head>
 <body>
-    <h1 class="titulo">Fruit Quiz</h1>
-     <p class="progresso">Pergunta 4 de 5</p>
-    <p class="pergunta"> 04. Que fruta é nativa do Brasil e tem um formato que lembra uma estrela?</p>
-    <div id="div-opcoes" data-proxima-pagina="pergunta05.html"    data-fruta="carambola">
-        <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Acerola</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Pitanga</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Jabuticaba</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Graviola</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Carambola</button>
-    </div>
+    <main class="page-bg">
+        <section class="page-card card-perguntas">
+            <h1 class="titulo">Fruit Quiz</h1>
+            
+            <p class="progresso">Pergunta 4 de 5</p>
 
-    <div id="mensagem"></div>
-    
+            <p class="pergunta"> 04. Que fruta é nativa do Brasil e tem um formato que lembra uma estrela?</p>
+
+            <div id="div-opcoes" 
+                data-proxima-pagina="pergunta05.html"    data-fruta="carambola">
+
+                <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Acerola</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Pitanga</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Jabuticaba</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Graviola</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Carambola')">Carambola</button>
+            </div>
+
+            <div id="mensagem"></div>
+        </section>
+    </main>
+     <footer class="rodape">
+    <p>© 2025 - Desenvolvido por  <a href="https://github.com/thamiresantos" target="_blank"  rel="noopener noreferrer"> Thamires Santos</a></p>
+  </footer>
     <script src="javascript/respostas.js"></script>
 </body>
+</html>

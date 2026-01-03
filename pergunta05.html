@@ -7,18 +7,29 @@
     <link rel="stylesheet" href="estilos/estilosPerguntas.css">
 </head>
 <body>
-    <h1 class="titulo">Fruit Quiz</h1>
-     <p class="progresso">Pergunta 5 de 5</p>
-    <p class="pergunta"> 05. Qual fruta nativa da Mata Atlântica, conhecida por sua casca escura e polpa branca adocicada, inspirou o nome de uma cidade histórica em Minas Gerais?</p>
-    <div id="div-opcoes" data-proxima-pagina="pagFinal.html"  data-fruta="jabuticaba">
-        <button class="opcoes" onclick="verificarResposta(this,'Jabuticaba')">Pitanga</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Jabuticaba')">Jabuticaba</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Jabuticaba')">Cambuci</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Jabuticaba')">Araça</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Jabuticaba')">Grumixama</button>
-    </div>
+    <main class="page-bg">
+        <section class="page-card card-perguntas">
+            <h1 class="titulo">Fruit Quiz</h1>
 
-    <div id="mensagem"></div>
-    
+            <p class="progresso">Pergunta 5 de 5</p>
+
+            <p class="pergunta"> 05. Qual fruta nativa da Mata Atlântica, conhecida por sua casca escura e polpa branca adocicada, inspirou o nome de uma cidade histórica em Minas Gerais?</p>
+
+            <div id="div-opcoes" data-proxima-pagina="pagFinal.html"  data-fruta="jabuticaba">
+                
+                <button class="opcoes" onclick="verificarResposta(this,'Jabuticaba')">Pitanga</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Jabuticaba')">Jabuticaba</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Jabuticaba')">Cambuci</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Jabuticaba')">Araça</button>
+                <button class="opcoes" onclick="verificarResposta(this,'Jabuticaba')">Grumixama</button>
+            </div>
+
+            <div id="mensagem"></div>
+        </section>
+    </main>
+     <footer class="rodape">
+    <p>© 2025 - Desenvolvido por  <a href="https://github.com/thamiresantos" target="_blank"  rel="noopener noreferrer"> Thamires Santos</a></p>
+  </footer>
     <script src="javascript/respostas.js"></script>
 </body>
+</html>

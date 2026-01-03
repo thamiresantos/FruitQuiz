@@ -7,22 +7,36 @@
     <link rel="stylesheet" href="estilos/pagFinal.css">
 </head>
 <body>
-    <div class= "tela-responsivo"></div>
-    <h1 class="titulo">Fruit Quiz</h1>
-    <h2 class="sub-titulo">
-  WOOOW! PARABÉNS <span id="usuario"></span>  
-  VOCÊ ACERTOU TODAS AS PERGUNTAS!!
-    </h2>
+    <main class="page-bg">
+        <section class="page-card ">
+            <div class="tela-final">
+                <div class="conteudo-final">
+                    <h1 class="titulo">Fruit Quiz</h1>
 
-    <a href="index.html" class="btn-jogarNovamente">Jogar Novamente?</a>
+                    <h2 class="sub-titulo">
+                         WOOOW! PARABÉNS <span id="usuario"></span><br>
+                        VOCÊ ACERTOU TODAS AS PERGUNTAS!!
+                    </h2>
 
-    <a href="https://github.com/thamiresantos" id="link-TS">Desenvolvido por Thamires Santos</a>
+                    <a href="index.html" class="btn-jogarNovamente">Jogar Novamente?</a>
 
-    <div class="midias-sociais">
-        <a href="https://github.com/thamiresantos" class="icons" target="_blank"><img src="estilos/imagens/icon-github.png"></a>
-        <a href="https://www.linkedin.com/in/thamires-santos-a9a652263/" class="icons" target="_blank"><img src="estilos/imagens/icon-linkedin.png"></a>
-    </div>
-    
+                    <div class="midias-sociais">
+                        <a href="https://github.com/thamiresantos" class="icons" target="_blank"><img src="estilos/imagens/icon-github.png"></a>
+                        <a href="https://www.linkedin.com/in/thamires-santos-a9a652263/" class="icons" target="_blank"><img src="estilos/imagens/icon-linkedin.png"></a>
+                    </div>
+                </div>
+
+                <div class="ilustracao-final">
+                    <img src="estilos/imagens/frutas-felizes.png" alt="Frutas comemorando">
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer class="rodape">
+    <p>© 2025 - Desenvolvido por  <a href="https://github.com/thamiresantos" target="_blank"  rel="noopener noreferrer"> Thamires Santos</a></p>
+  </footer>
+
     <script>
         const nomeUsuario = localStorage.getItem('nomeUsuario'); //Recuperando o nome do usuario da primeira pag
         if (nomeUsuario) {

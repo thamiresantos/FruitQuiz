@@ -7,19 +7,34 @@
     <link rel="stylesheet" href="estilos/estilosPerguntas.css">
 </head>
 <body>
-    <h1 class="titulo">Fruit Quiz</h1>
-     <p class="progresso">Pergunta 1 de 5</p>
-    <p class="pergunta"> 01. Qual fruta é conhecida por ter uma coroa?</p>
-    
-    <div id="div-opcoes" data-proxima-pagina="pergunta02.html"    data-fruta="abacaxi">
-        <button class="opcoes" onclick="verificarResposta(this,'Abacaxi')">Maça</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Abacaxi')">Banana</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Abacaxi')">Abacaxi</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Abacaxi')">Morango</button>
-        <button class="opcoes" onclick="verificarResposta(this,'Abacaxi')">Uva</button>
-    </div>
+  <main class="page-bg">
+    <section class="page-card card-perguntas">
+      <h1 class="titulo">Fruit Quiz</h1>
 
-    <div id="mensagem"></div>
+      <p class="progresso">Pergunta 1 de 5</p>
 
-    <script src="javascript/respostas.js"></script>
+      <p class="pergunta">
+        01. Qual fruta é conhecida por ter uma coroa?
+      </p>
+
+      <div id="div-opcoes" 
+           data-proxima-pagina="pergunta02.html"
+           data-fruta="abacaxi">
+
+            <button class="opcoes" onclick="verificarResposta(this,'Abacaxi')">Maça</button>
+            <button class="opcoes" onclick="verificarResposta(this,'Abacaxi')">Banana</button>
+            <button class="opcoes" onclick="verificarResposta(this,'Abacaxi')">Abacaxi</button>
+            <button class="opcoes" onclick="verificarResposta(this,'Abacaxi')">Morango</button>
+            <button class="opcoes" onclick="verificarResposta(this,'Abacaxi')">Uva</button>
+      </div>
+
+      <div id="mensagem"></div>
+
+    </section>
+  </main>
+   <footer class="rodape">
+    <p>© 2025 - Desenvolvido por  <a href="https://github.com/thamiresantos" target="_blank"  rel="noopener noreferrer"> Thamires Santos</a></p>
+  </footer>
+  <script src="javascript/respostas.js"></script>
 </body>
+</html>

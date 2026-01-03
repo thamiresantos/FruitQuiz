@@ -1,15 +1,37 @@
 @import url("style.css");
-@import url("pagInicial.css");
 
-body {
-    background-image: url(imagens/img-de-fundo.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80%;
+.titulo {
+    font-size: 3em;
 }
 
+.tela-final {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+}
 
-h2 {
+.conteudo-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ilustracao-final img {
+    width: 100%;
+    max-width: 380px;
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+.sub-titulo {
     margin: 15px;
     max-width: 500px;
     text-align: center;
@@ -44,7 +66,7 @@ h2 {
     font-weight: 700;
     text-align: center;
 
-    height: 25px;
+    height: 45px;
     width: 280px;
     padding: 10px;
 
@@ -65,25 +87,6 @@ h2 {
     transform: translateY(-2px);
 }
 
-
-#link-TS {
-    text-decoration: none;
-    font-family: var(--fonte-principal);
-    font-size: 1em;
-    margin: 35px 0px 10px;
-
-    background-image: linear-gradient(
-        to left,
-        var(--vermelho),
-        var(--vermelho-claro),
-        var(--verde-claro)
-    );
-
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .icons{
     margin: 8px;
     transform: scale(1.1);
@@ -91,21 +94,44 @@ h2 {
 
 /*MOBILE*/
 @media (max-width: 580px) {
-    body {
-        background:none;
+
+    .page-card , .page-bg {
+        padding: 0px;
+    }
+
+    .tela-final {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 7px 20px;
+    }
+
+    .conteudo-final {
+        order: 1;
+    }
+
+    .ilustracao-final {
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ilustracao-final img {
+        max-width: 240px;
     }
 
     .sub-titulo {
-        padding: 0;
+        font-size: 1rem;
+        margin: 10px;
     }
 
     .btn-jogarNovamente {
-        width: 70vw;
+        width: 80vw;
+        height: auto;
     }
 
-    #link-TS, .midias-sociais {
+    .midias-sociais {
         width: 100%;
         text-align: center;
+        margin-top: 15px;
     }
-
 }

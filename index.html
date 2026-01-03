@@ -1,24 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Quiz</title>
-    <link rel="stylesheet" href="estilos/pagInicial.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Quiz</title>
+  <link rel="stylesheet" href="estilos/pagInicial.css">
 </head>
 <body>
-    <div class= "tela-responsivo"></div>
-    <h1 class="titulo">Fruit Quiz</h1>
-    <h3 class="sub-titulo">Você gosta de frutas? Sabe tudo sobre elas? Teste seus conhecimentos aqui!</h3>
-    <label for="nome" class="txtNomeUser">
-  Digite como você gostaria de ser chamado:
-    </label>
 
-    
-    <input type="text" id="nome" placeholder="Digite seu nome ou apelido." required>
-    <p id="mensagem"></p>
-    <button type="button" class="btnStart" onclick="validarNome()">Vamos começar?</button>
+  <main class="page-bg">
 
-    <script src="javascript/validandoUsuario.js"></script>
+    <section class="page-card">
+
+      <div class="hero">
+
+        <div class="hero-image">
+          <img src="estilos/imagens/frutas-fundo.png" alt="Ilustração de frutas">
+        </div>
+
+        <div class="hero-content">
+          <h1 class="titulo">Fruit Quiz</h1>
+
+          <p class="sub-titulo">
+            Você gosta de frutas? Teste seus conhecimentos de forma divertida 🍓
+          </p>
+
+          <label for="nome" class="txtNomeUser">
+            Digite como você gostaria de ser chamado:
+          </label>
+
+          <input type="text" id="nome" placeholder="Digite seu nome ou apelido." required>
+          <p id="mensagem"></p>
+
+          <button class="btnStart" onclick="validarNome()">
+            Começar Quiz →
+          </button>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© 2025 - Desenvolvido por  <a href="https://github.com/thamiresantos" target="_blank"  rel="noopener noreferrer"> Thamires Santos</a></p>
+  </footer>
+
+  <script src="javascript/validandoUsuario.js"></script>
 </body>
 </html>
