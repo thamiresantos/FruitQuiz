@@ -27,7 +27,7 @@ if (botao.textContent === respostaCorreta){
     
     setTimeout(function(){
         proximaPagina();
-    }, 900);
+    }, 970);
 
 } else {
         botao.classList.add('incorreta');
